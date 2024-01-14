@@ -31,3 +31,7 @@ function myFunction(icon) {
     icon.style.display = 'inline';
   }, 2000); // 5000 milliseconds = 5 seconds
 }
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
