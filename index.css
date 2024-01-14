@@ -18,7 +18,10 @@ body > div > div > ul > div.icons > li:nth-child(6) > a {
 
 .fa-linkedin-square{
     color: black;
+}
 
+div.icons > li > a {
+    font-size: 36px;
 }
 
 /*email text and margin*/
