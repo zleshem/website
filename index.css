@@ -17,7 +17,6 @@
 
 .fa-linkedin-square{
     color: black;
-
 }
 
 /*email text and margin*/
@@ -72,6 +71,10 @@ body > div > div > ul > div.icons > li:nth-child(1) > svg {
 .icons li {
     display: inline-block;
     margin-right: 10px; /* Adjust the margin between icons if needed */
+}
+
+div.icons > li > a {
+    font-size: 36px;
 }
 
 .primary-tabs {
