@@ -2,7 +2,7 @@
 /*Barlow font family*/
 
 .navbar {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /*Whatsapp logo on navbar font color and margin*/
@@ -109,7 +109,7 @@ body > div > div > ul > div.icons > li:nth-child(1) > svg {
 
   /* background banner image*/
  .parallax-container {
-    background-image: url("Pictures/ZEEV_TLV_202314_1_1_50.jpg");
+    background-image: url("/Users/zeevleshem/Website/Pictures/ZEEV_TLV_202314_1_1_50.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -127,55 +127,57 @@ body > div > div > ul > div.icons > li:nth-child(1) > svg {
     width: auto;
 }
 
+.journey_section {
+    width: 50%;
+}
+
 .bio{
-    text-align: center;
+    text-align: left;
     margin: 20px;
     border-color: black;
+    margin-left: 50px;
+    width: 50%;
+    font-size: 16px;
 }
+
 .heading-3{
     margin-top: -200px;
 }
 
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax value for desired image width */
+    grid-gap:30px; /* Adjust the gap between images */
+}
+
+.ski-rinjani-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+}
+
+.pictures img, .ski-rinjani-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+}
+
 #imgMarathon{
-    width: 350px;
-    bottom: 40px;
-    left: 30px;
-    position: relative;
-    z-index: 10;
+    height: 100%;
 }
 
 #imgGeorgia {
-    width: 450px;
-    top: 100px;
-    left: 60px;
-    position: relative;
-    z-index: 7;
+    height: 100%;
 }
 
-#imgSki {
-    width: 580px;
-    top: 320px;
-    left: -200px;
-    position: relative;
-    z-index: -2;
-}
 
 #imgEating{
-    width: 250px;
-    top: 300px;
-    left: -40px;
-    position: relative;
-    float: center;
-    z-index: 14;
+    height: 100%;
 }
 
-#imgRinjani{
-    width: 650px;
-    top: -580px;
-    left: 900px;
-    position: relative;
-    float: center;
-    z-index: 4;
+
+.contact_section{
+    margin-top: 200px;
 }
 
  div.primary-tabs > li > a {
@@ -275,7 +277,8 @@ input{
 /*responsiveness*/
 
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1000px) {
+
+ @media screen and (max-width: 1000px) {
     .icons, .parallax-container {
         display: none;
     }
@@ -335,4 +338,4 @@ input{
     .contact_section {
        margin-top: 200px;
     }
-}
+} 
