@@ -128,7 +128,7 @@ body > div > div > ul > div.icons > li:nth-child(1) > svg {
 }
 
 .bio{
-    text-align: left;
+    text-align: center;
     margin: 20px;
     border-color: black;
 }
