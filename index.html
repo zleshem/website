@@ -20,72 +20,60 @@
  <div class="navbar-inner">
     <ul class="nav nav-tabs">
         <div class="primary-tabs">
-            <li><a class="nav-link" aria-current="page" href="#">Home</a></li>
-            <li><a class="nav-link" href="#journey" data-toggle="tab">My Journey</a></li>
-            <li><a class="nav-link" href="#interests" data-toggle="tab">Things I Enjoy</a></li>
-            <li><a class="nav-link" href="#contact" data-toggle="tab">Contact</a></li>
+            <li><a class="nav-link" aria-current="page" href="#Home">Home</a></li>
+            <li><a class="nav-link" href="#journey" data-toggle="tab" onclick="animateJourney(glow);";>My Journey</a></li>
+            <li><a class="nav-link" href="#interests" data-toggle="tab" onclick="animateInterests();">Things I Enjoy</a></li>
+            <li><a class="nav-link" href="#contact" data-toggle="tab" onclick="animateContact();">Contact</a></li>
         </div>
         <div class="icons">
                 <i id="clipboard" class="bi bi-clipboard" onclick="copyEmail(); myFunction(this);"></i> 
-                <i id="check" class="bi bi-check" style="display:none;"></i>
-                <div id="message">Copied Email!</div>
-
-            <input type="text" value="zleshem18@gmail.com" id="emailText"> <!-- Hidden input field for clipboard copy -->
+                <i id="check" class="bi bi-check" style="display:none;"></i>  <!-- Hidden checkmark (appears when clipboard is checked)  -->
+                <div id="message">Copied Email!</div> 
+            <input type="text" value="zleshem18@gmail.com" id="emailText"> <!-- Hidden text input field for clipboard copy -->
             <li href="mailto:zleshem18@gmail.com" class="button email">zleshem18@gmail.com</li>
-            <li><a href="https://wa.me/972587546477" class="button fa fa-whatsapp"></a></li>
-            <li><a href="https://www.linkedin.com/in/zeevleshem/" class="button fa fa-linkedin-square"></a></li>
+            <li><a href="https://wa.me/972587546477" class="button fa fa-whatsapp" target="_blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/zeevleshem/" class="button fa fa-linkedin-square" style="font-size:36px" target="_blank"></a></li>
             <!-- <li href="mailto:zleshem@gmail.com" class="button email">zleshem18@gmail.com</li> -->
         </div>
     </ul>
     <body>
         <div class="parallax-container">
         </div>
-    
         <div class="journey_section">
-            <h1 id="journey" class="heading-1">My Journey</h1>
+            <h1 id="journey" class="headings heading-1">My Journey</h1>
         </div>
 
-        <div class="bio">Hello! I’m Zeev (pronounced זיו in Hebrew). I’m Israeli-born, American-raised and Tel Aviv-based.
-I began my journey to the USA (more specifically to the great state of New Jersey) from Israel at the age of 10 and returned in 2017. 
-My love for traveling stemmed from frequent vacations to see family and friends based in places all the way from Arizona to London to Tel Aviv. 
-<br>I received my Bachelors Degree in Management in the US and began my professional career in the Aerospace industry there. 
-After my move to the startup nation, I was intrigued to immerse myself in the high-tech industry and found myself at an internship at Airobotics Drones. 
-And the rest is history..<br><br>
-6 years and 3 start-ups later, I find myself a Master’s Student at Reichman University in Human-Computer Interaction. 
-After 6 years of professional experience under my belt, I was intrigued to challenge myself intellectually again in a subject that combines, psychology, computer science, and design, an intersection of subjects that I found myself deeply interested to learn more about.
-<br>My professional experience in the SaaS industry includes various roles that combined client-facing and technical skills including, product support, mobile app project management, customer success and solutions/sales engineering. 
- I’m a curious problem-solver, great communicator and deeply motivated professional looking to contribute and grow alongside a promising technology company. 
+        <div class="bio">Hello! I’m Zeev (pronounced זיו in Hebrew). I am Israeli-born, American-raised and Tel Aviv-based. <br>I began my journey to the USA (more specifically to the great state of New Jersey) from Israel at the age of 10 and returned in 2017. <br>My love for travel arose from frequent vacations to see family and friends in Europe, New York, Arizona and Tel Aviv.
+           <br> I received my Bachelors Degree in Management in the US and began my professional career in the Aerospace industry. <br>After my move to the startup nation, I was interested to immerse myself in the high-tech industry and arranged an internship at Airobotics Drones. <br>And the rest is history..
+            <br><br>
+            6 years and 3 start-ups later, I find myself a Master’s Student at Reichman University in Human-Computer Interaction. 
+            <br>After 6 years of professional experience under my belt, I was intrigued to challenge myself intellectually again in a subject that combines, psychology, computer science, and design-<br> an intersection of subjects that I found myself deeply interested to learn more about.
+<br>My professional experiences in the SaaS industry include various roles that combined client-facing and technical skills such as, product support, mobile app project management, customer success and solutions/sales engineering. <br>I’m a curious ambitious problem-solver, great communicator and very motivated professional looking to contribute and grow alongside a promising technology company.
+ 
         </div>
 
-        <div id="interests" class="interests_section">
-            <h1 class="heading-2">Things I enjoy to do in my free time :)</h1>
+        <div class="interests_section">
+            <h1 id="interests" class="headings heading-2">Things I enjoy to do in my free time :)</h1>
         </div>
-
-
         <div id="photoBox" class="pictures">
-            <img id="imgGeorgia" src="imgGeorgia.JPG" alt="Georgia hike!" />
-            <img id="imgMarathon" src="imgMarathon.jpeg" alt="My first Marathon" />
-            <img id="imgSki" src="imgSki.jpeg" alt="Skiing" />
-            <img id="imgEating" src="imgEating.jpeg" alt="Eating" />
-            <img id="imgRinjani" src="imgRinjani.jpeg" alt="Rinjani" />
+            <img id="imgGeorgia" src="/Users/zeevleshem/Website/Pictures/imgGeorgia.JPG" alt="Georgia hike!" />
+            <img id="imgMarathon" src="/Users/zeevleshem/Website/Pictures/imgMarathon.jpeg" alt="My first Marathon" />
+            <img id="imgSki" src="/Users/zeevleshem/Website/Pictures/imgSki.jpeg" alt="Skiing" />
+            <img id="imgEating" src="/Users/zeevleshem/Website/Pictures/imgEating.jpeg" alt="Eating" />
+            <img id="imgRinjani" src="/Users/zeevleshem/Website/Pictures/imgRinjani.jpeg" alt="Rinjani" />
         </div>
-
-   <div id="contact" class="contact_section">
-    <h1 class="heading-3">Get in touch with me:</h1>
+   <div class="contact_section">
+    <h1 id="contact" class="headings heading-3">Get in touch with me:</h1>
     </div>
-    
     <div class="contact_icons">
         <a href="mailto:zleshem18@gmail.com" class="bi bi-envelope" style="cursor: pointer;"></a>
-        <a href="https://wa.me/972587546477" class="bi bi-whatsapp"></a>
-        <a href="https://www.linkedin.com/in/zeevleshem/" class="bi bi-linkedin"></a>
+        <a href="https://wa.me/972587546477" class="bi bi-whatsapp" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/zeevleshem/" class="bi bi-linkedin" target="_blank"></a>
     </div>
-
     <div class="top-text">
         <i href="#Home" class="bi bi-arrow-up-circle-fill" onclick="scrollToTop()"></i>
         <h4 class="nav-link" href="#Home" class="back-to-top" onclick="scrollToTop()">Back to top </h4>
     </div>
-
-
 <script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
