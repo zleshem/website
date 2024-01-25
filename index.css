@@ -109,7 +109,7 @@ body > div > div > ul > div.icons > li:nth-child(1) > svg {
 
   /* background banner image*/
  .parallax-container {
-    background-image: url("/Users/zeevleshem/Website/Pictures/ZEEV_TLV_202314_1_1_50.jpg");
+    background-image: url("Pictures/ZEEV_TLV_202314_1_1_50.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
