@@ -109,7 +109,7 @@ body > div > div > ul > div.icons > li:nth-child(1) > svg {
 
   /* background banner image*/
  .parallax-container {
-    background-image: url("Pictures/ZEEV_TLV_202314_1_1_50.jpg");
+    background-image: url("/Users/zeevleshem/Website/Pictures/ZEEV_TLV_202314_1_1_50.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -127,9 +127,6 @@ body > div > div > ul > div.icons > li:nth-child(1) > svg {
     width: auto;
 }
 
-.journey_section {
-    width: 50%;
-}
 
 .bio{
     text-align: left;
@@ -138,6 +135,18 @@ body > div > div > ul > div.icons > li:nth-child(1) > svg {
     margin-left: 50px;
     width: 50%;
     font-size: 16px;
+}
+
+.bioContainer{
+    display: flex;
+    align-items: center;
+}
+
+.motorcycleImage{
+    width: 50%;
+    float: right;
+    margin-right: 20px;
+    height: auto;
 }
 
 .heading-3{
