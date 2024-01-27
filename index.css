@@ -322,7 +322,7 @@ input{
 }
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 #imgSki {
     width: 580px;
     top: 0px;
@@ -340,7 +340,7 @@ input{
         left: 0px;
         position: relative;
     }
-}
+} */
 
 @media screen and (max-width: 600px) {
     .pictures, .interests_section {
@@ -353,3 +353,9 @@ input{
        margin-top: 200px;
     }
 } 
+
+@media screen and (max-width: 600px) {
+    .motorcycleImage{
+        display: none;
+    }
+}
